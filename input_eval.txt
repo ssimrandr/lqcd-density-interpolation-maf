@@ -1,0 +1,13 @@
+csv_file=gaussian_mixture_samples.csv
+n_samples=10000
+a_min=0.2
+a_max=1.5
+b_min=0.5
+b_max=0.8
+c_min=-0.3
+c_max=0.4
+as=0.2,0.6,1.0,1.5
+bs=0.5,0.6,0.8
+cs=-0.3,0.0,0.2,0.4
+model_weightsdir=trained_models/10k
+outputdirname=eval_results10k_w128

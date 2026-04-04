@@ -1,0 +1,9 @@
+csv_file=gaussian_mixture_samples.csv
+a_min=0.2
+a_max=1.5
+b_min=0.5
+b_max=0.8
+c_min=-0.3
+c_max=0.4
+epochs=500
+batch_size=1024

@@ -1,0 +1,14 @@
+csv_file=all_data_with_nt6.csv
+vol_min=12
+vol_max=24
+mass_min=0.02
+mass_max=0.03
+beta_min=4.968
+beta_max=5.008
+n_samples=100000
+num_made=10
+volumes=12,16,18,24
+mass=0.026122148
+flag=0
+batch_size=2048
+run_num=1

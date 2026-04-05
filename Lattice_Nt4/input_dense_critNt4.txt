@@ -1,0 +1,14 @@
+csv_file=all_data_with_nt4_orig.csv
+vol_min=8
+vol_max=16
+mass_min=0.075
+mass_max=0.09
+beta_min=4.966
+beta_max=5.002
+n_samples=1000000
+num_made=8
+volumes=8,12,16
+masses=0.0820620615
+flag=0
+batch_size=2048
+run_num=11

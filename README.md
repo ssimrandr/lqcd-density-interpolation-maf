@@ -29,6 +29,27 @@ os.environ["TF_USE_LEGACY_KERAS"] = "1"
 import tensorflow as tf
 ```
 
-## Files in this repo
+## Respository file structure
 This describes the set of files you will find in this repository. 
 
+```
+GMM/
+├── GaussianMixtureModel.ipynb       # Jupyter notebook containing generation of input training data, computing MMD on MAF model generated data and comparison of distribution - with this one can reproduce Figs. 12,13 and 14 of the manuscript.
+├── input_eval.txt    # Takes as input the csv file containing training data (for the purpose of normalisation), number of samples needed, minimum and maximum values of parameters and the range of parameters one needs to evaluate the model (for interpolation purposes). Also specified are the directory paths for the trained models and evaluated output data.
+├── eval_MAF.py       # Evaluation script using as input the trained models and an input_eval.txt file, the output is the npz files to be used in the Jupyter notebook
+├── input_train.txt  # Takes as input the csv file containing training data, rangle of values of parameters for the normalisation, the number of epochs and batch size
+└── train_MAF.py     # Training script taking as input the csv files generated from the Jupyter notebook and the input_train.txt file
+```
+
+```
+Lattice_Nt4/
+├── trained_models/
+    ├── contains trained models used in Figs. 4,5,6,7,8,9 for Nt_4 ,names of files are descriptive
+├── Loss_curves/
+    ├──  loss_ep800_bs{xxxx}_nummade8_loop{y}.csv : Each file contains three columns in the order epoch_number, training loss and validation loss. The                                                       names of the files have xxxx as the batch sizes 1024, 2048 and 4096. The loop number y runs over 1, 2
+    ├──  loss.ipynb : Usiung the files above and this notebook one can reproduce the left plot in Fig. 10
+├── input_eval.txt    # same description as GMM/input_eval.txt
+├── eval_MAF.py       # Only change from GMM/eval_MAF.py is the quantities evaluated: here we evaluate the first 4 cumulants of the chiral condensate: mean, variance, skewness and kurtosis
+├── input_train.txt  # same description as GMM/input_train.txt
+└── train_MAF.py     # same as GMM/train_MAF.py
+```

@@ -18,7 +18,9 @@ This project depends on a **specific and non-trivial TensorFlow–Keras setup**.
 ### !! Important
 
 TensorFlow versions **≥ 2.12 changed how Keras is handled**  
-(`keras` vs `tf.keras` separation), which can break this code.
+(`keras` vs `tf.keras` separation), which can break this code. 
+
+**Tip**: `conda` handles library-dependencies better than `pip`, and may be easier to set-up the virtual environment for this project.  
 
 To ensure compatibility, you must include the following **at the very beginning of your script**:
 

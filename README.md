@@ -55,3 +55,10 @@ Lattice_Nt4/
 ├── input_train.txt  # same description as GMM/input_train.txt
 └── train_MAF.py     # same as GMM/train_MAF.py
 ```
+
+```
+Plot_Data/
+├── Critical_Mass_Plot
+    └── contains data for Fig. 8, names of data files correspond to labels in the plot
+└── ...
+```

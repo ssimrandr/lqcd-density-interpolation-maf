@@ -1,5 +1,5 @@
 # lqcd-density-interpolation-maf
-This repository contains the code and plot data for [arXiv:2604.xxxxx]. As lattice MC data is not public at this stage, we provide the setup for the Gaussian Mixture Model (GMM) provided in Appendix B of the manuscript. This includes the input training data, input file, training script and evaluation script for generating the data. We further provide plotting scripts to obtain the figures. 
+This repository contains the code and plot data for [arXiv:2605.07262]. As lattice MC data is not public at this stage, we provide the setup for the Gaussian Mixture Model (GMM) provided in Appendix B of the manuscript. This includes the input training data, input file, training script and evaluation script for generating the data. We further provide plotting scripts to obtain the figures. 
 
 **Note**: Although we don't provide the lQCD training data, we are providing trained models for the cases shown in the manuscript. Using this the users can readily evaltuate the densities or cumulants as they wish and succesfully generate the data from the manuscript.
 
